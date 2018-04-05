@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $title = 'Welcome to Lavarell. This title is initialised in controller section';
+        $title = 'Welcome to Lavarell.';
         // return view('pages.index',compact('title'));
         return view('pages.index')->with('title',$title);
     }
