@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{config('app.name','lsapp')}}</title>
+@extends('layouts.app')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-    </head>
-    <body>
-        <h1>Welcome To Laravel </h1>
-        <p>This is a Laravel application</p>
-    </body>
-</html>
+@section('content')
+<h1></h1>
+    <div class="jumbotron text-center">
+            <div class="container">
+              <h1 class="display-3">{{$title}}</h1>
+              <p>This is a Laravel application</p>
+              <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login &raquo;</a> <a class="btn btn-success btn-lg" href="/register" role="button">Register &raquo;</a></p>
+            </div>
+          </div>
+@endsection
