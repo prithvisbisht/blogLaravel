@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse">
 <div class="container">
     <div class="navbar-header">
@@ -13,7 +12,7 @@
 
         <!-- Branding Image -->
         <a class="navbar-brand" href="{{ url('/') }}">
-          Blogs  
+          Blogs
           {{-- {{ config('app.name', 'Laravel') }} --}}
         </a>
     </div>
@@ -43,7 +42,7 @@
                     </a>
 
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="/dashboard">Dashboard</a></li>  
+                      <li><a href="/dashboard">Dashboard</a></li>
                       <li>
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -61,4 +60,4 @@
         </ul>
     </div>
 </div>
-</nav>  
+</nav>
